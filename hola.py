@@ -18,9 +18,9 @@ def obtener_servicio(servicio):
 #Definir la funcion para gregar clientes, falta conectar el SQLite y crear las tablas 
 def agregar():
     print("\n-----------AGREGAR REGISTRO-----------------")
-    nombre = input("Ingrese su nombre").strip
-    documento = input("Ingrese su documento de identidad (DNI o PASAPORTE): ").strip
-    animal = input("Ingrese el tipo de animal a atender: ").strip
+    nombre = input("Ingrese su nombre").strip()
+    documento = input("Ingrese su documento de identidad (DNI o PASAPORTE): ").strip()
+    animal = input("Ingrese el tipo de animal a atender: ").strip()
     print("\n-------SERVICIOS DISPONIBLES---------------")
     print("1. Baño y corte - S/. 50.00")
     print("2. Atencion Veterinaria - S/. 100.00")
@@ -31,7 +31,7 @@ def agregar():
         servicio = "Baño y corte"
     else:
         servicio == "Atencion Veterinaria"
-    descripcion = input("Ingrese detalles adicionales que debamos saber antes de trabajar con su mascota: ").strip
+    descripcion = input("Ingrese detalles adicionales que debamos saber antes de trabajar con su mascota: ").strip()
 
     precio = obtener_servicio(servicio)
     Persona = clientes(nombre, documento, animal, descripcion)
