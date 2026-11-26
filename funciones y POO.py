@@ -73,7 +73,7 @@ def agregar():
     print("\n-----------AGREGAR REGISTRO-----------------")
     nombre = input("Ingrese su nombre: ").strip()
     documento = input("Ingrese su documento de identidad (DNI o PASAPORTE): ").strip()
-    while len(documento) < 0 or len(documento) > 9:
+    while len(documento) == 0 or len(documento) > 9:
         documento = input("Ingrese su documento de identidad (DNI o PASAPORTE): ").strip()
     tipo_animal = input("Ingrese el tipo de animal (perro/gato): ").strip().lower()
     nombre_animal = input("Ingrese el nombre del animal: ").strip()
